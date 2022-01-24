@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Possition </title>
+    <style>
+        .div-one{
+            height: 600px;
+            width: 900px;
+            background-color: green;
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .div-two {
+            height: 400px;
+            width: 400px;
+            background-color: red;
+            position: absolute;
+            right: 300px;
+            top:100px;
+            border-radius:200px;
+
+        }
+.div-three{
+    height: 300px;
+    width: 300px;
+    background-color: yellow;
+    border:1px solid red;
+   /* border-radius:0px; */
+    transition:1s;
+    margin: 150px;
+   /* transform:scale(1);*/
+   /* transform:scaleY(1);*/
+   /* transfor:rotate(0deg)*/
+   /* transfor:rotateX(0deg)*/
+   /* transfor:rotateY(0deg)*/
+    transform:skew(-45deg)
+
+
+}
+        .div-three:hover{
+           /* border-radius: 150px; */
+          /*  transform: scaleY(1.5);*/
+          /*  transform: scale3d()(1.5,2.5,3.5); */
+          /* transform: rotate(360deg);*/
+           /* transform: rotateX(90deg);*/
+          /*  transform: rotateY(360deg); */
+            transform:skew(0deg)
+
+        }
+        .div-box {
+            margin-left: 150px;
+            position: relative;
+        }
+        .one {
+            height: 300px;
+            width: 50px;
+            background-color: red;
+            transform: skew(-30deg);
+            float: left;
+        }
+
+
+        .two {
+            height: 300px;
+            width: 50px;
+            background-color: red;
+            transform: skew(30deg);
+            float: left;
+            margin-left:150px;
+        }
+        .three{
+            height: 20px;
+            width: 250px;
+            background-color: red;
+            margin-top: 150px;
+            transform: skewX(30deg);
+           /* float:left;*/
+            position: absolute;
+            top:0px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="div-box">
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+</div>
+
+<!--<div class="div-three"></div>-->
+<!--<div class="div-one">-->
+<!--    <div class="div-two"></div>-->
+<!--</div>-->
+</body>
+</html>
